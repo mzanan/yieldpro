@@ -1,0 +1,32 @@
+@import url('');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Roboto, sans-serif;
+        @apply text-body text-base;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        @apply bg-surface;
+    }
+}
+
+@layer components {
+    .section {
+        @apply flex flex-col gap-8;
+        @apply px-6 py-6;
+    }
+
+    .title {
+        @apply font-black text-[34px] leading-[40px] md:text-[42px] md:leading-[49px];
+    }
+    
+    .subtitle {
+        @apply text-[24px] leading-[32px] font-bold text-center;
+    }
+}
