@@ -1,32 +1,32 @@
-@import url('');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: Roboto, sans-serif;
-        @apply text-body text-base;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        @apply bg-surface;
-    }
+  html {
+    font-family: "Poppins", sans-serif;
+    @apply text-base text-white;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    @apply bg-surface;
+  }
 }
 
 @layer components {
-    .section {
-        @apply flex flex-col gap-8;
-        @apply px-6 py-6;
-    }
+  .section {
+    @apply flex flex-col gap-8;
+    @apply px-6 py-6;
+  }
 
-    .title {
-        @apply font-black text-[34px] leading-[40px] md:text-[42px] md:leading-[49px];
-    }
-    
-    .subtitle {
-        @apply text-[24px] leading-[32px] font-bold text-center;
-    }
+  .title {
+    @apply font-extrabold text-[22px] leading-[26px];
+  }
+
+  .subtitle {
+    @apply font-normal text-[16px] leading-[19px];
+  }
 }

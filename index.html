@@ -6,12 +6,32 @@
     <link href="./dist/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="bg-header-background bg-contain bg-no-repeat h-[360px]">
-      <header>
-        <img src="./assets/images/logo.png" alt="YieldPro Logo" />
-      </header>
-      <p>Title</p>
-      <p>Description</p>
+    <div class="relative">
+      <img
+        src="./assets/images/header-background.png"
+        alt="Background shaped image"
+        class="absolute top-0 left-0 h-[360px] w-screen z-[-1]"
+      />
+
+      <img
+        src="./assets/images/logo.png"
+        alt="YieldPro Logo"
+        class="pl-4 pt-8"
+      />
+
+      <div class="text-center px-5">
+        <p class="title pt-10">A few more clicks to sign in to your account.</p>
+        <p class="subtitle pt-7">
+          <span> Manage all your e-commerce </span> <br />
+          <span> accounts in one place! </span>
+        </p>
+      </div>
+
+      <img
+        src="./assets/images/financial.png"
+        alt="Financial chart"
+        class="w-[205px] h-[170px] mt-[-20px] ml-[-10px]"
+      />
     </div>
 
     <main>
