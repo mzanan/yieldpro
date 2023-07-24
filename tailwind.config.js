@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       colors: {
         surface: "#FEFEFE",
-        primary: "#0E2549",
-        secondary: "#66CCCC",
+        primary: "#6A2C93",
         white: "#F8F7F7",
+        gray: "#646464",
+        black: "#0C0C0C",
       },
       backgroundImage: {
         "header-background": "url('/assets/images/header-background.png')",

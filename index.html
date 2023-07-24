@@ -6,7 +6,7 @@
     <link href="./dist/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="relative">
+    <div class="relative h-[360px]">
       <img
         src="./assets/images/header-background.png"
         alt="Background shaped image"
@@ -34,9 +34,53 @@
       />
     </div>
 
-    <main>
-      <section>
-        <div></div>
+    <main class="px-4 pt-6">
+      <section class="px-2 flex flex-col gap-10">
+        <p class="form-title">Sign In</p>
+
+        <div class="flex flex-col gap-10">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="p-2.5 rounded border-[1px] border-gray"
+          />
+
+          <div id="test" class="flex flex-col gap-6 flex-grow">
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              class="p-2.5 rounded border-[1px] border-gray"
+            />
+            <div>
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label
+                for="checkbox"
+                class="text-gray font-[roboto] font-normal text-base"
+                >Remember me</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between">
+          <button
+            class="form-button font-medium text-primary border-[1px] border-gray"
+          >
+            Register
+          </button>
+          <button class="form-button font-bold bg-primary text-white">
+            Login
+          </button>
+        </div>
+
+        <p class="text-center font-[roboto] text-xs font-normal">
+          <span> By sign in up, you agree to our </span>
+          <span class="text-primary"> Terms and Conditions </span>
+          <span> & </span>
+          <span class="text-primary">Privacy Policy </span>
+        </p>
       </section>
     </main>
   </body>
