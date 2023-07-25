@@ -6,82 +6,106 @@
     <link href="./dist/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="relative h-[360px]">
+    <div
+      class="relative h-[360px] lg:max-h-[1440px] lg:h-screen md:flex md:flex-col"
+    >
       <img
         src="./assets/images/header-background.png"
         alt="Background shaped image"
-        class="absolute top-0 left-0 h-[360px] w-screen z-[-1]"
+        class="absolute top-0 left-0 w-screen z-[-1] h-[360px] md:h-[744px] lg:hidden"
+      />
+
+      <img
+        src="./assets/images/header-background-desktop.png"
+        alt="Background shaped image"
+        class="absolute top-0 left-0 z-[-1] max-h-[1440px] h-screen w-[800px] hidden lg:block"
       />
 
       <img
         src="./assets/images/logo.png"
         alt="YieldPro Logo"
-        class="pl-4 pt-8"
+        class="pl-4 pt-8 md:pl-12 md:pt-14 lg:pl-24 lg:pt-32 w-[140px] md:w-[170px] lg:w-[350px]"
       />
 
-      <div class="text-center px-5">
-        <p class="title pt-10">A few more clicks to sign in to your account.</p>
-        <p class="subtitle pt-7">
-          <span> Manage all your e-commerce </span> <br />
-          <span> accounts in one place! </span>
-        </p>
-      </div>
+      <div class="lg:flex lg:flex-row lg:items-center">
+        <section
+          class="text-center px-5 mx-auto lg:px-0 lg:mx-0 w-[310px] md:w-[400px] lg:w-[590px] lg:ml-24 lg:mb-48"
+        >
+          <p class="title pt-10 lg:pt-0">
+            A few more clicks to sign in to your account.
+          </p>
+          <p class="subtitle pt-7 lg:pt-16 lg:mr-12">
+            <span> Manage all your e-commerce </span>
+            <span> accounts in one place! </span>
+          </p>
+        </section>
 
-      <img
-        src="./assets/images/financial.png"
-        alt="Financial chart"
-        class="w-[205px] h-[170px] mt-[-20px] ml-[-10px]"
-      />
-    </div>
+        <img
+          src="./assets/images/financial.png"
+          alt="Financial chart"
+          class="mt-[-20px] ml-[-10px] md:mt-[160px] md:ml-[10px] lg:mt-[0px] lg:absolute lg:bottom-0 lg:ml-96 w-[205px] h-[170px] md:w-[360px] md:h-[300px] xl:w-[500px] xl:h-[410px] z-[-1]"
+        />
 
-    <main class="px-4 pt-6">
-      <section class="px-2 flex flex-col gap-10">
-        <p class="form-title">Sign In</p>
+        <section class="mx-auto">
+          <div
+            class="px-4 py-6 md:py-8 md:px-6 md:pt-8 lg:py-12 lg:px-8 md:bg-white max-xl:max-w-[360px] xl:w-[480px] xl:h-[550px] md:rounded-2xl md:shadow-2xl mx-auto"
+          >
+            <div class="px-2 flex flex-col gap-10 xl:gap-20">
+              <p class="form-title mb-3">Sign In</p>
 
-        <div class="flex flex-col gap-10">
-          <input
-            type="email"
-            name="email"
-            placeholder="E-mail"
-            class="p-2.5 rounded border-[1px] border-gray"
-          />
+              <div class="flex flex-col gap-10 xl:gap-14">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="p-2.5 rounded border-[1px] border-gray xl:h-14"
+                />
 
-          <div id="test" class="flex flex-col gap-6 flex-grow">
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              class="p-2.5 rounded border-[1px] border-gray"
-            />
-            <div>
-              <input type="checkbox" id="checkbox" name="checkbox" />
-              <label
-                for="checkbox"
-                class="text-gray font-[roboto] font-normal text-base"
-                >Remember me</label
-              >
+                <div class="flex flex-col gap-6 flex-grow">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    class="p-2.5 rounded border-[1px] border-gray xl:h-14"
+                  />
+                  <div>
+                    <input type="checkbox" id="checkbox" name="checkbox" />
+                    <label
+                      for="checkbox"
+                      class="text-gray font-[roboto] font-normal text-base"
+                      >Remember me</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-row justify-between">
+                <button
+                  class="form-button font-medium text-primary border-[1px] border-gray xl:w-[180px] xl:h-12"
+                >
+                  Register
+                </button>
+                <button
+                  class="form-button font-bold bg-primary text-white xl:w-[180px] xl:h-12"
+                >
+                  Login
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="flex flex-row justify-between">
-          <button
-            class="form-button font-medium text-primary border-[1px] border-gray"
-          >
-            Register
-          </button>
-          <button class="form-button font-bold bg-primary text-white">
-            Login
-          </button>
-        </div>
-
-        <p class="text-center font-[roboto] text-xs font-normal">
-          <span> By sign in up, you agree to our </span>
-          <span class="text-primary"> Terms and Conditions </span>
-          <span> & </span>
-          <span class="text-primary">Privacy Policy </span>
-        </p>
-      </section>
-    </main>
+          <footer class="max-md:max-w-[360px] mx-auto">
+            <p
+              class="text-center font-[roboto] font-normal pt-8 md:pt-12 md:pb-8 text-xs md:text-base xl:pt-[185px]"
+            >
+              <span> By sign in up, you agree to our </span>
+              <span class="text-primary"> Terms and Conditions </span>
+              <span> & </span>
+              <span class="text-primary">Privacy Policy </span>
+            </p>
+          </footer>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

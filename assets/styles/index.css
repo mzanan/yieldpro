@@ -24,11 +24,11 @@
   }
 
   .title {
-    @apply font-extrabold text-[22px] leading-[26px] text-white;
+    @apply font-extrabold text-[22px] leading-[26px] md:text-2xl lg:text-[42px] lg:leading-[50px] text-white;
   }
 
   .subtitle {
-    @apply font-normal text-[16px] leading-[19px] text-white;
+    @apply font-normal text-[16px] leading-[19px] md:text-lg lg:text-2xl text-white;
   }
 
   .form-title {
