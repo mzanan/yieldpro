@@ -6,35 +6,33 @@
     <link href="./dist/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div
-      class="relative h-[360px] lg:max-h-[1440px] lg:h-screen md:flex md:flex-col"
-    >
+    <div class="relative xl:max-h-[1440px] xl:h-screen md:flex md:flex-col">
       <img
         src="./assets/images/header-background.png"
         alt="Background shaped image"
-        class="absolute top-0 left-0 w-screen z-[-1] h-[360px] md:h-[744px] lg:hidden"
+        class="absolute top-0 left-0 w-screen z-[-1] h-[360px] md:h-[480px] xl:hidden"
       />
 
       <img
         src="./assets/images/header-background-desktop.png"
         alt="Background shaped image"
-        class="absolute top-0 left-0 z-[-1] max-h-[1440px] h-screen w-[800px] hidden lg:block"
+        class="absolute top-0 left-0 z-[-1] max-h-[1440px] h-screen w-[800px] hidden xl:block"
       />
 
       <img
         src="./assets/images/logo.png"
         alt="YieldPro Logo"
-        class="pl-4 pt-8 md:pl-12 md:pt-14 lg:pl-24 lg:pt-32 w-[140px] md:w-[170px] lg:w-[350px]"
+        class="pl-4 pt-8 md:pl-12 md:pt-14 xl:pl-24 xl:pt-32 w-[140px] md:w-[170px] xl:w-[350px]"
       />
 
-      <div class="lg:flex lg:flex-row lg:items-center">
+      <div class="xl:flex xl:flex-row xl:items-center">
         <section
-          class="text-center px-5 mx-auto lg:px-0 lg:mx-0 w-[310px] md:w-[400px] lg:w-[590px] lg:ml-24 lg:mb-48"
+          class="text-center px-5 mx-auto xl:px-0 xl:mx-0 w-[310px] md:w-[400px] xl:w-[590px] xl:ml-24 xl:mb-48"
         >
-          <p class="title pt-10 lg:pt-0">
+          <p class="title pt-10 xl:pt-0">
             A few more clicks to sign in to your account.
           </p>
-          <p class="subtitle pt-7 lg:pt-16 lg:mr-12">
+          <p class="subtitle pt-7 xl:pt-16 xl:mr-12">
             <span> Manage all your e-commerce </span>
             <span> accounts in one place! </span>
           </p>
@@ -43,31 +41,48 @@
         <img
           src="./assets/images/financial.png"
           alt="Financial chart"
-          class="mt-[-20px] ml-[-10px] md:mt-[160px] md:ml-[10px] lg:mt-[0px] lg:absolute lg:bottom-0 lg:ml-96 w-[205px] h-[170px] md:w-[360px] md:h-[300px] xl:w-[500px] xl:h-[410px] z-[-1]"
+          class="mt-[-20px] ml-[-10px] md:mt-[-40px] md:ml-[10px] xl:mt-[0px] xl:absolute xl:bottom-0 xl:ml-96 w-[200px] h-[170px] md:w-[300px] md:h-[240px] xl:w-[500px] xl:h-[410px] z-[-1]"
         />
 
         <section class="mx-auto">
           <div
-            class="px-4 py-6 md:py-8 md:px-6 md:pt-8 lg:py-12 lg:px-8 md:bg-white max-xl:max-w-[360px] xl:w-[480px] xl:h-[550px] md:rounded-2xl md:shadow-2xl mx-auto"
+            class="px-4 py-6 md:py-8 md:px-6 md:pt-8 xl:py-12 xl:px-8 md:bg-white max-xl:max-w-[360px] xl:w-[480px] xl:h-[550px] md:rounded-2xl md:shadow-2xl mx-auto"
           >
             <div class="px-2 flex flex-col gap-10 xl:gap-20">
               <p class="form-title mb-3">Sign In</p>
 
               <div class="flex flex-col gap-10 xl:gap-14">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  class="p-2.5 rounded border-[1px] border-gray xl:h-14"
-                />
+                <div class="relative">
+                  <label
+                    class="absolute bg-surface md:bg-white text-gray text-xs px-1 ml-3.5 top-[-10px]"
+                    >E-mail</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    class="pl-4 py-2 rounded border-[1px] md:bg-white border-gray w-full md:w-[300px] h-14"
+                  />
+                </div>
 
                 <div class="flex flex-col gap-6 flex-grow">
-                  <input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                    class="p-2.5 rounded border-[1px] border-gray xl:h-14"
-                  />
+                  <div class="relative">
+                    <label
+                      class="absolute bg-surface md:bg-white text-gray text-xs px-1 ml-3.5 top-[-10px]"
+                      >Password</label
+                    >
+                    <img
+                      src="assets/images/view-off.png"
+                      class="absolute right-0 pr-4 pt-4"
+                      alt="closed eye"
+                    />
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                      class="pl-4 pr-10 py-2 rounded border-[1px] md:bg-white border-gray w-full md:w-[300px] h-14"
+                    />
+                  </div>
                   <div>
                     <input type="checkbox" id="checkbox" name="checkbox" />
                     <label
