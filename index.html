@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/styles/index.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="h-[100vh] overflow-hidden">
     <div class="relative xl:max-h-[1440px] xl:h-screen md:flex md:flex-col">
       <img
         src="./assets/images/header-background.png"
@@ -25,7 +25,7 @@
         class="pl-4 pt-8 md:pl-12 md:pt-14 xl:pl-24 xl:pt-32 w-[140px] md:w-[170px] xl:w-[350px]"
       />
 
-      <div class="xl:flex xl:flex-row xl:items-center">
+      <div class="relative xl:flex xl:flex-row xl:items-center">
         <section
           class="text-center px-5 mx-auto xl:px-0 xl:mx-0 w-[310px] md:w-[400px] xl:w-[590px] xl:ml-24 xl:mb-48"
         >
@@ -41,10 +41,10 @@
         <img
           src="./assets/images/financial.png"
           alt="Financial chart"
-          class="mt-[-20px] ml-[-10px] md:mt-[-40px] md:ml-[10px] xl:mt-[0px] xl:absolute xl:bottom-0 xl:ml-96 w-[200px] h-[170px] md:w-[300px] md:h-[240px] xl:w-[500px] xl:h-[410px] z-[-1]"
+          class="absolute left-[20%] -bottom-10 hidden xl:block"
         />
 
-        <section class="mx-auto">
+        <section class="mx-auto pt-20 md:pt-0">
           <div
             class="px-4 py-6 md:py-8 md:px-6 md:pt-8 xl:py-12 xl:px-8 md:bg-white max-xl:max-w-[360px] xl:w-[480px] xl:h-[550px] md:rounded-2xl md:shadow-2xl mx-auto"
           >
@@ -61,7 +61,7 @@
                     type="email"
                     name="email"
                     placeholder="E-mail"
-                    class="pl-4 py-2 rounded border-[1px] md:bg-white border-gray w-full md:w-[300px] h-14"
+                    class="pl-4 py-2 rounded border-[1px] md:bg-white border-gray w-full md:w-[300px] xl:w-full h-14"
                   />
                 </div>
 
@@ -80,7 +80,7 @@
                       type="password"
                       name="password"
                       placeholder="Password"
-                      class="pl-4 pr-10 py-2 rounded border-[1px] md:bg-white border-gray w-full md:w-[300px] h-14"
+                      class="pl-4 pr-10 py-2 rounded border-[1px] md:bg-white border-gray w-full md:w-[300px] xl:w-full h-14"
                     />
                   </div>
                   <div>
@@ -111,7 +111,7 @@
 
           <footer class="max-md:max-w-[360px] mx-auto">
             <p
-              class="text-center font-[roboto] font-normal pt-8 md:pt-12 md:pb-8 text-xs md:text-base xl:pt-[185px]"
+              class="text-center font-[roboto] font-normal pt-8 md:pt-12 md:pb-8 text-xs md:text-base"
             >
               <span> By sign in up, you agree to our </span>
               <span class="text-primary"> Terms and Conditions </span>
