@@ -837,6 +837,22 @@ body {
   padding-top: 2rem;
 }
 
+.pt-24{
+  padding-top: 6rem;
+}
+
+.pt-28{
+  padding-top: 7rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
+.pt-36{
+  padding-top: 9rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1034,10 +1050,6 @@ body {
 
   .xl\:w-\[590px\]{
     width: 590px;
-  }
-
-  .xl\:w-\[416px\]{
-    width: 416px;
   }
 
   .xl\:w-full{
