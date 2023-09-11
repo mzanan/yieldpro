@@ -6,13 +6,44 @@
     <link href="./dist/styles/index.css" rel="stylesheet" />
   </head>
   <body class="flex bg-slate-500">
+    <button id="toggle-button-mobile" class="p-4 md:hidden">
+      <svg
+        class="w-6 h-6"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 6H20M4 12H20M4 18H20"
+          stroke="#000000"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
     <div
-      class="py-8 px-3 bg-white h-full xl:h-screen"
-      style="box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3)"
       id="menu"
+      class="menu-shadow pt-8 pb-20 px-3 bg-white max-md:absolute max-md:hidden xl:h-screen"
     >
-      <div id="menu-container" class="font-[roboto] font-medium">
-        <button id="toggle-button" class="p-4">
+      <div id="menu-container" class="font-[roboto] font-medium h-[1024px]">
+        <button id="toggle-button-mobile-menu" class="p-4 md:hidden">
+          <svg
+            class="w-6 h-6"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button id="toggle-button" class="p-4 hidden md:block">
           <svg
             class="w-6 h-6"
             viewBox="0 0 24 24"
@@ -33,6 +64,7 @@
             src="./assets/images/logo-big-triangle.png"
             id="logo"
             class="mx-auto"
+            alt="logo"
           />
         </a>
 
@@ -44,7 +76,7 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/leads.png" class="w-6 h-6" />
+            <img src="./assets/images/leads.png" class="w-6 h-6" alt="icon" />
 
             <li>
               <a href="#"> Leads </a>
@@ -54,7 +86,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/settings.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/settings.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <span class="toggle-text">DID</span> <a href="#"> Settings </a>
@@ -64,7 +100,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/campaign.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/campaign.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#">
@@ -77,7 +117,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/log-leads.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/log-leads.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#"> Log Leads </a>
@@ -87,7 +131,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/call-logs.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/call-logs.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#"> Call Logs </a>
@@ -105,7 +153,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/dashboard.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/dashboard.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#"> Dashboard </a>
@@ -115,7 +167,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/accounts.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/accounts.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#"> Accounts </a>
@@ -125,7 +181,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/activity.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/activity.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#"> Activity <span class="toggle-text">Logs</span> </a>
@@ -135,7 +195,7 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/metrics.png" class="w-6 h-6" />
+            <img src="./assets/images/metrics.png" class="w-6 h-6" alt="icon" />
 
             <li>
               <a href="#"> <span class="toggle-text">User</span> Metrics </a>
@@ -153,7 +213,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/list-rules.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/list-rules.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#"> List Rules </a>
@@ -163,7 +227,7 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/create.png" class="w-6 h-6" />
+            <img src="./assets/images/create.png" class="w-6 h-6" alt="icon" />
 
             <li>
               <a href="#"> Create <span class="toggle-text">Rules</span></a>
@@ -176,6 +240,7 @@
             <img
               src="./assets/images/campaign-management.png"
               class="w-6 h-6"
+              alt="icon"
             />
 
             <li>
@@ -189,7 +254,11 @@
           <div
             class="list_item flex items-center p-4 rounded-full gap-3 hover:bg-hover active:bg-active"
           >
-            <img src="./assets/images/campaign-creation.png" class="w-6 h-6" />
+            <img
+              src="./assets/images/campaign-creation.png"
+              class="w-6 h-6"
+              alt="icon"
+            />
 
             <li>
               <a href="#">
@@ -202,48 +271,8 @@
       </div>
     </div>
 
-    <div class="flex-grow bg-gray-100 p-10">Yield Pro</div>
+    <div class="bg-gray-100 p-10">Yield Pro</div>
 
-    <script>
-      const logo = document.getElementById("logo");
-      const menu = document.getElementById("menu");
-      const menuContainer = document.getElementById("menu-container");
-      const menuList = document.getElementById("menu-list");
-      const listItem = document.querySelectorAll(".list_item");
-      const toggleButton = document.getElementById("toggle-button");
-      const toggleText = document.querySelectorAll(".toggle-text");
-
-      toggleButton.addEventListener("click", () => {
-        logo.classList.toggle("py-16");
-        menu.classList.toggle("w-32");
-        menuContainer.classList.toggle("flex");
-        menuContainer.classList.toggle("flex-col");
-        menuContainer.classList.toggle("items-center");
-        menuList.classList.toggle("text-sm");
-        menuList.classList.toggle("text-xs");
-
-        toggleText.forEach((element) => {
-          element.classList.toggle("hidden");
-        });
-
-        listItem.forEach((element) => {
-          element.classList.toggle("flex-col");
-          element.classList.toggle("p-4");
-          element.classList.toggle("px-4");
-          element.classList.toggle("py-2");
-          element.classList.toggle("gap-3");
-        });
-      });
-
-      listItem.forEach((item) => {
-        item.addEventListener("click", () => {
-          listItem.forEach((item) => {
-            item.classList.remove("bg-active");
-          });
-
-          item.classList.add("bg-active");
-        });
-      });
-    </script>
+    <script src="./assets/menu.js"></script>
   </body>
 </html>

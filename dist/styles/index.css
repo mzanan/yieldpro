@@ -696,6 +696,10 @@ body {
   height: 100vh;
 }
 
+.h-\[1024px\]{
+  height: 1024px;
+}
+
 .h-\[1px\]{
   height: 1px;
 }
@@ -704,20 +708,12 @@ body {
   height: 360px;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .h-screen{
   height: 100vh;
 }
 
 .max-h-\[1440px\]{
   max-height: 1440px;
-}
-
-.w-32{
-  width: 8rem;
 }
 
 .w-5\/6{
@@ -801,11 +797,6 @@ body {
   border-color: rgb(100 100 100 / var(--tw-border-opacity));
 }
 
-.bg-active{
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 222 248 / var(--tw-bg-opacity));
-}
-
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(106 44 147 / var(--tw-bg-opacity));
@@ -816,9 +807,9 @@ body {
   background-color: rgb(177 175 180 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800{
+.bg-slate-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-surface{
@@ -829,11 +820,6 @@ body {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(248 247 247 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .p-10{
@@ -869,11 +855,6 @@ body {
   padding-right: 1.25rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -884,9 +865,8 @@ body {
   padding-bottom: 1.5rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.pb-20{
+  padding-bottom: 5rem;
 }
 
 .pl-4{
@@ -971,6 +951,10 @@ body {
   color: rgb(248 247 247 / var(--tw-text-opacity));
 }
 
+.menu-shadow {
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
 .hover\:bg-hover:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(241 236 247 / var(--tw-bg-opacity));
@@ -988,14 +972,30 @@ body {
 }
 
 @media not all and (min-width: 768px){
+  .max-md\:absolute{
+    position: absolute;
+  }
+
+  .max-md\:hidden{
+    display: none;
+  }
+
   .max-md\:max-w-\[360px\]{
     max-width: 360px;
   }
 }
 
 @media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-\[480px\]{
@@ -1180,11 +1180,5 @@ body {
 
   .xl\:pt-32{
     padding-top: 8rem;
-  }
-}
-
-@media (min-width: 1536px){
-  .\32xl\:h-screen{
-    height: 100vh;
   }
 }

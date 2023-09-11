@@ -39,3 +39,7 @@
     @apply w-[144px] h-[48px] rounded-full font-[roboto] text-sm;
   }
 }
+
+.menu-shadow {
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
