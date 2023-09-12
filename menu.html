@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/styles/index.css" rel="stylesheet" />
   </head>
-  <body class="flex bg-slate-500">
-    <button id="toggle-button-mobile" class="p-4 md:hidden">
-      <svg
-        class="w-6 h-6"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4 6H20M4 12H20M4 18H20"
-          stroke="#000000"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
+  <body class="flex bg-white">
+    <div
+      class="flex items-center justify-between pt-2 pl-3 pr-6 w-full bg-white md:hidden"
+    >
+      <button id="toggle-button-mobile" class="p-4">
+        <svg
+          class="w-6 h-6"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 6H20M4 12H20M4 18H20"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div class="flex gap-6">
+        <img src="assets/images/notification.png" alt="icon" class="w-8 h-8" />
+        <img src="assets/images/user-picture.png" alt="icon" class="w-8 h-8" />
+      </div>
+    </div>
 
     <div
       id="menu"
-      class="menu-shadow pt-8 pb-20 px-3 bg-white max-md:absolute max-md:hidden xl:h-screen"
+      class="menu-shadow pt-2 pb-20 px-3 bg-white max-md:absolute max-md:hidden md:pt-8"
     >
-      <div id="menu-container" class="font-[roboto] font-medium h-[1024px]">
+      <div id="menu-container" class="font-[roboto] font-medium">
         <button id="toggle-button-mobile-menu" class="p-4 md:hidden">
           <svg
             class="w-6 h-6"
@@ -270,8 +278,6 @@
         </ul>
       </div>
     </div>
-
-    <div class="bg-gray-100 p-10">Yield Pro</div>
 
     <script src="./assets/menu.js"></script>
   </body>

@@ -1,9 +1,16 @@
-window.onload = checkWindowWidth;
-window.addEventListener("resize", checkWindowWidth);
+window.addEventListener("load", () => {
+  checkWindowWidth();
+  checkWindowHeight();
+});
+
+window.addEventListener("resize", () => {
+  checkWindowWidth();
+  checkWindowHeight();
+});
 
 const mouseupHandler = function (event) {
   if (!menu.contains(event.target)) {
-    menu.style.transform = "translateX(-100%)";
+    menu.style.transform = "translateX(-110%)";
   }
 };
 
@@ -12,17 +19,16 @@ const menu = document.getElementById("menu");
 const menuContainer = document.getElementById("menu-container");
 const menuList = document.getElementById("menu-list");
 const listItem = document.querySelectorAll(".list_item");
+const toggleText = document.querySelectorAll(".toggle-text");
 const toggleButton = document.getElementById("toggle-button");
 const toggleButtonMobile = document.getElementById("toggle-button-mobile");
 const toggleButtonMobileMenu = document.getElementById(
   "toggle-button-mobile-menu"
 );
 
-const toggleText = document.querySelectorAll(".toggle-text");
-
 toggleButton.addEventListener("click", () => {
-  logo.classList.toggle("py-16");
-  menu.classList.toggle("w-32");
+  logo.classList.toggle("logo-padding");
+  menu.classList.toggle("menu-width");
   menuContainer.classList.toggle("flex");
   menuContainer.classList.toggle("flex-col");
   menuContainer.classList.toggle("items-center");
@@ -45,15 +51,17 @@ toggleButton.addEventListener("click", () => {
 listItem.forEach((item) => {
   item.addEventListener("click", () => {
     listItem.forEach((item) => {
-      item.classList.remove("bg-active");
+      item.classList.remove("active");
     });
 
-    item.classList.add("bg-active");
+    item.classList.add("active");
   });
 });
 
 function checkWindowWidth() {
   if (window.innerWidth < 768) {
+    menu.style.display = "block";
+    menu.style.transform = "translateX(-110%)";
     menu.style.transition =
       "transform 0.3s ease-in-out, display 0.3s ease-in-out";
 
@@ -65,11 +73,11 @@ function checkWindowWidth() {
     });
 
     toggleButtonMobileMenu.addEventListener("click", () => {
-      menu.style.transform = "translateX(-100%)";
+      menu.style.transform = "translateX(-110%)";
     });
 
-    logo.classList.remove("py-16");
-    menu.classList.remove("w-32");
+    logo.classList.remove("logo-padding");
+    menu.classList.remove("menu-width");
     menuContainer.classList.remove("flex");
     menuContainer.classList.remove("flex-col");
     menuContainer.classList.remove("items-center");
@@ -97,5 +105,13 @@ function checkWindowWidth() {
     menu.style.transform = "none";
 
     document.removeEventListener("mouseup", mouseupHandler);
+  }
+}
+
+function checkWindowHeight() {
+  if (window.innerHeight > 1024) {
+    menu.classList.add("h-screen");
+  } else {
+    menu.classList.remove("h-screen");
   }
 }

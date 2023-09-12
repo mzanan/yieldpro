@@ -692,12 +692,12 @@ body {
   height: 1.5rem;
 }
 
-.h-\[100vh\]{
-  height: 100vh;
+.h-8{
+  height: 2rem;
 }
 
-.h-\[1024px\]{
-  height: 1024px;
+.h-\[100vh\]{
+  height: 100vh;
 }
 
 .h-\[1px\]{
@@ -722,6 +722,10 @@ body {
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-\[140px\]{
@@ -807,11 +811,6 @@ body {
   background-color: rgb(177 175 180 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .bg-surface{
   --tw-bg-opacity: 1;
   background-color: rgb(254 254 254 / var(--tw-bg-opacity));
@@ -820,10 +819,6 @@ body {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(248 247 247 / var(--tw-bg-opacity));
-}
-
-.p-10{
-  padding: 2.5rem;
 }
 
 .p-4{
@@ -869,6 +864,10 @@ body {
   padding-bottom: 5rem;
 }
 
+.pl-3{
+  padding-left: 0.75rem;
+}
+
 .pl-4{
   padding-left: 1rem;
 }
@@ -881,8 +880,16 @@ body {
   padding-right: 1rem;
 }
 
+.pr-6{
+  padding-right: 1.5rem;
+}
+
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
 }
 
 .pt-36{
@@ -955,6 +962,20 @@ body {
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
+.menu-width{
+  width: 8rem;
+}
+
+.logo-padding{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 193 251 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-hover:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(241 236 247 / var(--tw-bg-opacity));
@@ -962,7 +983,7 @@ body {
 
 .active\:bg-active:active{
   --tw-bg-opacity: 1;
-  background-color: rgb(232 222 248 / var(--tw-bg-opacity));
+  background-color: rgb(228 193 251 / var(--tw-bg-opacity));
 }
 
 @media not all and (min-width: 1280px){
